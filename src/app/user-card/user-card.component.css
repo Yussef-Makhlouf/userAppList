@@ -1,0 +1,17 @@
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body img {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.fa {
+  font-size: 24px;
+  margin-top: 10px;
+}

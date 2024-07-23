@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="d-flex flex-wrap justify-content-center">
+    @for (users of users; track users.id) {
+      <div class="col-md-3 col-sm-6 my-3 d-flex mx-4">
+        <div class="card mb-3 flex-fill ">
+          <img
+            [src]="users.image"
+            class="rounded-circle mb-3 m-auto"
+            alt="Profile Picture"
+            width="80"
+            height="80"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ users.name }}</h5>
+            <p class="card-text">{{ users.email }}</p>
+            <p class="card-text">{{ users.phone }}</p>
+            <i class="fa"
+              [ngClass]="{
+                'fa-check-circle text-success': users.is_verified,
+                'fa-times-circle text-danger': !users.is_verified
+              }"></i>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+
+    <!-- <div class="row my-5">
+
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <img
+            [src]="users.profilePictureUrl"
+            class="rounded-circle mb-3 m-auto"
+            alt="Profile Picture"
+            width="80"
+            height="80"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ users.name }}</h5>
+            <p class="card-text">{{ users.email }}</p>
+            <p class="card-text">{{ users.phone }}</p>
+            <i class="fa"
+              [ngClass]="{
+                'fa-check-circle text-success': users.verified,
+                'fa-times-circle text-danger': !users.verified
+              }"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div> -->
