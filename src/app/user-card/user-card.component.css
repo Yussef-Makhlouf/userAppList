@@ -3,7 +3,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-body img {
+.card img {
   border: 2px solid #ccc;
   border-radius: 50%;
   width: 100px;
